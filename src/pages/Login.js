@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate for redirection
-import '../styles/LoginPage.css';
+import "../styles/LoginPage.css";
+import image from "../assets/image.webp";
 
 function LoginPage({ onLogin }) {
   const [regNumber, setRegNumber] = useState("");
@@ -54,7 +55,8 @@ function LoginPage({ onLogin }) {
               onChange={(e) => setPassword(e.target.value)} // Update state on change
             />
           </div>
-          {error && <p className="error-message">{error}</p>} {/* Show error message if any */}
+          {error && <p className="error-message">{error}</p>}{" "}
+          {/* Show error message if any */}
           <button type="submit" className="submit-btn">
             Login
           </button>

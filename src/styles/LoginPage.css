@@ -18,7 +18,7 @@ body {
 
 /* Background Container */
 .background-container {
-  /* background: url('../../public/image.webp') no-repeat center center; */
+  /* background: url(${image}) no-repeat center center; */
   background-size: cover;
   position: absolute;
   display: flex;
