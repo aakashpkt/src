@@ -1,0 +1,209 @@
+.dashboard-container {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.select-box {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.selected-team-members {
+  margin-top: 10px;
+}
+
+.steam-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  height: 20px;
+}
+
+.team-member {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.remove-btn {
+  background: none;
+  border: none;
+  color: #ff0000;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  color: #ff5555;
+}
+
+.confirm-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.confirm-btn:disabled {
+  background: #ddd;
+  cursor: not-allowed;
+}
+
+.confirm-btn:hover {
+  background: #0056b3;
+}
+
+.undo-btn {
+  background: #ffcc00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.undo-btn:hover {
+  background: #e6b800;
+}
+
+
+.communication-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.mentor-message {
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.send-message-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.confirmation-summary-card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+/* Profile Picture and Team Member Info */
+.team-member-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 20px;
+}
+
+.team-member {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  gap: 25px;
+}
+
+.team-member-profile-pic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border:1px solid;
+  object-fit: cover;
+}
+
+.team-member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.team-member-info p {
+  margin: 0;
+}
+
+.mentor-details{
+  width: 40%;
+}
+.team-details{
+  width: 30%;
+}
+
+
+.send-message-btn:hover {
+  background: #218838;
+}
+
+.friend-requests-card {
+  background: #f8f9fa;
+  padding: 15px;
+}
+
+.accept-btn,
+.reject-btn {
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.accept-btn {
+  background: #28a745;
+  color: white;
+}
+
+.accept-btn:hover {
+  background: #218838;
+}
+
+.reject-btn {
+  background: #dc3545;
+  color: white;
+}
+
+.reject-btn:hover {
+  background: #c82333;
+}

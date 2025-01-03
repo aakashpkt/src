@@ -1,0 +1,131 @@
+.project-detail-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.content-area {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  align-items: stretch; /* Ensure both children stretch vertically */
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background: #f7f9fa;
+}
+
+/* Right Sidebar Enhancements */
+.right-sidebar {
+  background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Subtle gradient */
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start;
+  
+  /* Add a subtle box shadow to separate it visually */
+  box-shadow: -1px 0 5px rgba(0,0,0,0.05);
+}
+
+.right-sidebar h3 {
+  margin-top: 0;
+}
+
+.right-sidebar dl {
+  margin: 0;
+  padding: 0;
+}
+
+.right-sidebar dt {
+  font-weight: bold;
+  margin-top: 15px; /* More spacing for clarity */
+  font-size: 14px;
+  color: #333;
+}
+
+.right-sidebar dd {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 10px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* Tabs and Content */
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tabs button {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  margin-right: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tabs button.active {
+  background: #3498db;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.tab-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Lists and Timeline */
+.clean-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.list-row {
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.list-row:last-child {
+  border-bottom: none;
+}
+
+.timeline-list {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.timeline-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.timeline-row:last-child {
+  border-bottom: none;
+}
+
+.timeline-row dt {
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}

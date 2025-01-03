@@ -1,0 +1,20 @@
+/* Adjust main content below navbar */
+.main-content {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  scroll-behavior: smooth;
+  transition: margin-left 0.3s ease-in-out;
+  overflow: auto; /* Enables scrolling inside the main content */
+  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+
+/* Hide scrollbar globally but keep scrolling enabled */
+body {
+  overflow: hidden; /* Hides the default scrollbar */
+}
+
+.main-content::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Webkit-based browsers (Chrome, Safari) */
+}
